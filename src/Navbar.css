@@ -1,0 +1,170 @@
+.navbox{
+  margin-top:1vh;
+  background-color: ;
+  padding: 15px;
+  border:2px solid black;
+  box-shadow: 0 2px 4px #404040;
+  border-radius:10px;
+  margin:8px;
+  animation-name:navbaranimation;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  display:grid;
+  grid-template-columns: 4fr 8fr 12fr 2fr;
+
+}
+
+@keyframes navbaranimation {
+  0%{box-shadow: 0 0px 5px #404040;}
+  50%{box-shadow: 0 0px 5px blue;}
+  100%{box-shadow: 0 0px 5px #404040;}
+}
+
+.navbar{
+  font-weight:bold;
+  display: flex;
+  justify-content:space-evenly;
+  grid-column:3/4;
+}
+.navlogo{
+  display:flex;
+  align-items:center;
+  font-family: 'Macondo', cursive;
+  font-weight:bolder;
+  font-size:20px;
+  font-family: 'Radio Canada', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  grid-column:2/3;
+}
+.menubuttondiv{
+  display:none;  
+}
+
+.tabs{
+  text-decoration: none;
+  color:black;
+  /*padding: 5px 8px;
+  border-radius:5px;
+  background-color:#8dc0e2;
+  border:1px solid black;
+  box-shadow: 0 0 3px #404040; */
+}
+.tabs:hover{
+  transform:scale(1.05);
+}
+.active{
+  color: black;
+  font-weight:bolder;
+  border-bottom:2px solid black;
+  /*background-color:#9cd3f7;
+  box-shadow: 0 0 4px blue;*/
+}
+
+/*@media (max-width:850px) {
+  .navbox{
+    display:block;
+  }
+  .navlogo{
+    display:none;
+  }
+}*/
+
+.navbarmobbox{
+  display: flex;
+  justify-content:center;
+}
+.navbarmob{
+  font-weight:bold;
+  margin:0;
+  width:95%;
+  height:100%;
+  background:black ;
+  opacity:80%;
+  padding:10px;
+  font-size:20px;
+  position: absolute;
+  z-index:100;
+  animation-name:mobmenuanimation;
+  animation-duration:.5s;
+  animation-iteration-count:1;
+}
+@keyframes mobmenuanimation {
+  0%{width:0%;font-size:0px;}
+  100%{width:95%;font-size:20px;}
+}
+.navtabsgroup{
+  margin-top:20vh;
+}
+.mobtabs{
+  display:flex;
+  justify-content:center;
+  margin:5vh;
+  color:white;
+}
+.tabsm{
+   text-decoration: none;
+  color:white;
+}
+.menubuttontab{
+  width:35px;
+  background-color: Transparent;
+  border-radius:5px;
+  border:2px solid black;
+  box-shadow:  0 0 2px #404040;
+}
+
+.navbarmobboxb{
+  display:none;
+  position:fixed;
+  top:93%;
+  z-index:100;
+}
+.navtabsgroupb{
+  display:grid;
+  width:90vw;
+  grid-template-columns: .5fr 1fr 1fr 1fr 1fr .5fr;
+  border: 1px solid black;
+  border-radius:22px;
+  margin:0 15px 10px 15px;
+  background: rgba(0,0,0,.8); 
+  
+}
+#firsttab{
+  grid-column:2/3;
+}
+.mobtabsb{
+  display:flex;
+  justify-content:center;
+  margin:8px;
+  font-size:20px;
+}
+@media (max-width:950px) {
+  .navbox{
+  padding:12px;
+  display:grid;
+  grid-template-columns: 8fr 12fr 4fr 4fr;
+  }
+  .navlogo{
+    margin:0;
+    justify-content:center;
+    font-size:23px;
+  }
+  .navbar{
+    display:none;
+  }
+  .menubuttondiv{
+    display:flex;
+    grid-column:4/5;
+  }
+  .navbarmobboxb{
+  display:flex;
+  }
+  .active{
+  font-weight:bolder;
+  border-bottom:2px solid white;
+  /*background-color:#9cd3f7;
+  box-shadow: 0 0 4px blue;*/
+}
+}
+
+

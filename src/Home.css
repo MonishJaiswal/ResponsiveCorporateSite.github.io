@@ -1,0 +1,36 @@
+.dcompanyName{
+  display: flex;
+  justify-content:center;
+  margin-bottom:-20px;
+}
+.companyName{
+  color:#282828;
+  font-weight:bold;
+  position: relative;
+  animation-name:cname;
+  animation-duration:4s;
+  animation-iteration-count: infinite;
+}
+@keyframes cname {
+  0% {border-bottom:2px solid #EE204D;left:-70px}
+  50% {border-bottom:2px solid #9932cc;left:70px}
+  100% {border-bottom:2px solid #EE204D;left:-70px}
+  
+}
+.namaste{
+  width: 350px;
+  border-radius: 100px ;
+}
+
+.title1{
+  padding:20px;
+  text-align:center;
+  font-family: 'Radio Canada', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+@media (max-width:850px) {
+  .namaste{
+  width: 300px;
+  border-radius: 80px;
+ }
+}

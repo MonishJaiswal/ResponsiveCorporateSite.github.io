@@ -1,0 +1,100 @@
+.calbox{
+  display:flex;
+  justify-content:center; 
+}
+
+.calbody{
+  border:1px solid black;
+  border-radius:20px;
+  Padding:15px;
+  margin:25px;
+  width:225px;
+  box-shadow: 0 0 5px black;
+  animation-name:calopen;
+  position:relative; 
+  animation-duration:1s;
+  animation-iteration-count:1;
+}
+@keyframes calopen {
+  0% {width:0%}
+  100%{width:225px}
+}
+.caltitle{
+  display:flex;
+  justify-content:center;
+}
+.calsolbox{
+  display:flex;
+  justify-content:center;
+}
+.calsol{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:40px;
+  background-color:white;
+  border:1px solid black;
+  border-radius:20px;
+  margin:10px;
+  font-weight:bold;
+}
+
+.calprob{
+  display:flex;
+  justify-content:center;
+  margin:10px;
+}
+.probdisplay{
+  border-radius:25px;
+  padding:10px;
+  width:100%;
+}
+
+.calbuttonbox{
+  display:flex;
+  justify-content:center;
+   margin:10px;
+}
+.calbutton{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  margin:10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width:60%
+  cursor: pointer;
+  border:1px solid black;
+  box-shadow: 0 0 3px black;
+  border-radius:5px;
+  animation-name:calbuttonopen;
+  position:relative; 
+  animation-duration:2s;
+  animation-iteration-count:1;
+}
+.calbutton:hover{
+  
+}
+
+.barbox{
+  display:flex;
+  justify-content:center;
+}
+.calbar{
+  height:5px;
+  border-radius:10px;
+  background-color:#4CAF50;
+  position:relative;
+  animation-name: watchbar;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+
+@keyframes barlength {
+  0% {width:0%}
+  50%{width:100%}
+  100%{width:0%}
+}
+

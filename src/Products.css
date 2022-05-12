@@ -1,0 +1,63 @@
+.productstitle{
+   padding:20px;
+  text-align:center;
+  font-family: 'Radio Canada', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+.pbodybox{
+}
+.pbody{
+}
+
+.pbody1{
+  display:flex;
+  justify-content:center;
+}
+.pcard{
+  width:50vw;
+  border:3px solid black;
+  padding:10px;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  margin-bottom: 50px;
+  border-radius:25px;
+  box-shadow: 0 0 2px black;
+}
+.pcard:hover{
+  background-color:rgba(255,255,255,0.3);
+  transform:scale(1.05);
+  box-shadow: 0 0 8px black;
+}
+
+.pname{
+  text-align:center;
+}
+.pdetails{
+  text-align:center;
+}
+.price{
+  text-align:center;
+}
+.purchase{
+  text-align:center;
+}
+.pbutton:hover{
+  transform:scale(1.2);
+  background-color: lightgreen;
+  cursor:pointer;
+}
+
+@media (max-width:750px) {
+  .pcard{
+  width:80vw;
+  border:3px solid black;
+  padding:10px;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius:25px;
+  box-shadow: 0 0 2px black;
+}
+ .productstitle{
+   font-size:14px;
+ }
+}

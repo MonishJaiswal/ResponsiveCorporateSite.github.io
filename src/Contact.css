@@ -1,0 +1,92 @@
+.contacttitle{
+   padding:20px;
+  text-align:center;
+  font-family: 'Radio Canada', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+}
+.topbody{
+  display:flex;
+  justify-content:center;
+}
+.body1{
+  display:inline-block;
+  justify-content:center;
+}
+
+.cards{
+  disply:flex;
+  justify-content:center;
+  width:120px;
+  margin:10px;
+  align-items:center;
+  border: 1px solid black;
+  border-radius:20px;
+  box-shadow: 0 0 10px black;
+  background-color:;
+  /*background-color: #4790f0;*/
+}
+.cards:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.card{
+  margin:10px;
+}
+.image{
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border:1px solid black;
+  border-radius:18px;
+  box-shadow: 0 0 3px black;
+}
+.name1{
+  text-align:center;
+  font-size:15px;
+  font-weight:bold;
+  margin-top:-15px;
+  margin-bottom:-6px;
+  color:black;
+}
+.name2{
+  text-decoration:none;
+}
+
+@media (max-width:660px) {
+  .contacttitle{
+    font-size:12px;
+  }
+  .cards{
+  disply:none;
+  justify-content:center;
+  width:50px;
+  margin:10px;
+  align-items:center;
+  border: 0px solid black;
+  border-radius:5px;
+  box-shadow: 0 0 4px black;
+  background-color:;
+  /*background-color: #4790f0;*/
+}
+.cards:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+.card{
+  margin: 5px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+.image{
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border:1px solid black;
+  border-radius:5px;
+  box-shadow: 0 0 2px black;
+}
+.name1{
+  display:none;
+}
+}

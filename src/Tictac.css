@@ -1,0 +1,72 @@
+.body{
+  display:flex;
+  justify-content:center;
+}
+.bigbox{
+  background-color: ;
+  padding:2px;
+  animation-name:tictacbox;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  position:relative;
+}
+@keyframes tictacbox {
+  0%{box-shadow:0 0 20px green;border: 2px solid green;}
+  50%{box-shadow:0 0 20px blue;border: 2px solid blue;}
+  100%{box-shadow:0 0 20px green;border: 2px solid green;} 
+}
+
+.gsquare{
+  width:70px;
+  height:70px;
+  background-color:lightgray;
+  border: 1px solid black;
+  margin:2px;
+  animation-name:tictacopen;
+  animation-duration:1.5s;
+  animation-iteration-count:1;
+  position:relative;
+  font-weight:bold;
+  font-size:25px;
+  border-radius:7px;
+}
+@keyframes tictacopen {
+  0%{width:0px;height:0px;font-size:0px;}
+  100%{width:70px; height:70px;font-size:25px;} 
+}
+.gsquare:hover{
+  background-color:lightgreen;
+  transform:scale(1.07);
+}
+#tictacX{
+  color:red;
+}
+.tictacrestart{
+   display:flex;
+  justify-content:center;
+  margin-top:25px;
+}
+.ticrestart{
+  height:50px;
+  width:225px;
+  font-weight:bold;
+  border-radius:5px;
+  animation-name:tictacrestsrtbutton;
+  animation-duration:2.5s;
+  animation-iteration-count:infinite;
+  position:relative;
+  background-color:rgba(255,255,255,0.5);
+}
+.ticrestart:hover{
+  transform:scale(1.07);
+  background-color:lightblue;
+}
+@keyframes tictacrestsrtbutton {
+  0%{box-shadow:0 0 10px red;border: 1px solid red;}
+  50%{box-shadow:0 0 10px black;border: 1px solid black;}
+  100%{box-shadow:0 0 10px red;border: 1px solid red;} 
+}
+
+.X{
+  color:red;
+}
